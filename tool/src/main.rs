@@ -595,7 +595,7 @@ fn main() {
             ptau_path,
             circuit_path,
             output,
-        } => prepare_keypair(&ptau_path, &output, &circuit_path, &args.arch),
+        } => prepare_keypair(&ptau_path, &circuit_path, &output, &args.arch),
         Commands::PrepareInput {
             vcek_path,
             report_path,

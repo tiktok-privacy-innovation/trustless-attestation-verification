@@ -20,7 +20,7 @@ In this particular scenario, we don't actually need the scheme to be zero-knowle
 
 
 ## Implementation
-There are numerous Zero-Knowledge Proof (ZKP) schemes available for use. This repository serves as the main entry point, with concrete implementations found in the following repositories:
+There are numerous Zero-Knowledge Proof (ZKP) schemes and frameworks available for use. This repository serves as the main entry point, with concrete implementations found in the following repositories:
 
 1. Circom-based implementation with Groth16: [link](https://github.com/tiktok-privacy-innovation/trustless-attestation-verification-circom)
    - **Description**: Utilizes Circom circuits and the Groth16 proving system for efficient proof generation and verification.
@@ -30,10 +30,15 @@ There are numerous Zero-Knowledge Proof (ZKP) schemes available for use. This re
    - **Usage**: Instructions on how to set up and run the implementation can be found in [this repository](https://github.com/tiktok-privacy-innovation/trustless-attestation-verification-circom).
 
 
-*Note: As of now, we have implemented only one ZKP backend. More ZKP backends will be supported soon.*
+2. RiscZero-based implementation: [link](https://github.com/tiktok-privacy-innovation/trustless-attestation-verification-risczero)
+   - **Description**: Employs the Risc0 ZKVM for proof generation and verification.
+   - **Features**:
+     - Attestation code can be written in Rust, enabling easier implementation and  better auditability.
+     - Faster proof generation.
+   - **Usage**: Instructions on how to set up and run the implementation can be found in [this repository](https://github.com/tiktok-privacy-innovation/trustless-attestation-verification-risczero).
 
 ## License
-This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](LICENSE) file for details.
+See the [LICENSE](LICENSE) file for details.
 
 ## Contribution
 We warmly welcome feedback and contributions from the community. Please feel free to share your valuable comments through GitHub issues or contact us directly!
